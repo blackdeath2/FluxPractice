@@ -6,5 +6,8 @@ metadata:
   namespace: podinfo
 resources: 
   - ../base
-  - ./horizontalPodScaler.yaml
+patches:
+  - path: ./horizontalPodScaler.yaml
+    target:
+      kind: HorizontalPodAutoscaler
 
