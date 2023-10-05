@@ -3,3 +3,4 @@ kind: Kustomization
 namespace: default
 resources:
   - podinfo-source.yaml
+  - podinfo-watcher.yaml
