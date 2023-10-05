@@ -10,4 +10,5 @@ patches:
   - path: ./horizontalPodScaler.yaml
     target:
       kind: HorizontalPodAutoscaler
+      name: podinfo
 
