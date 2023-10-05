@@ -15,4 +15,3 @@ Commands:
   - "k3d cluster create my-cluster --api-port 6550 -p "9999:80@loadbalancer" --agents 2"
 
 This command creates a cluster with 1 server node (control-plane) and 2 agent nodes.
-</br>
