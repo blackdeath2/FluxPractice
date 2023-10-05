@@ -6,29 +6,6 @@ metadata:
 resources: 
   - ../base
   - ./podinfo-ingress.yaml
-spec:
-  patches: 
-    - patch: |-
-        apiVersion: networking.k8s.io/v1
-        kind: Ingress
-        metadata:
-          name: ingress-route
-          annotations:
-            nginx.ingress.kubernetes.io/rewrite-target: /
-        spec:
-          rules:
-          - host: localhost
-            http:
-              paths:
-              - path: /
-                pathType: Prefix
-                podinfo:
-                  service:
-                    name: podinfo
-                    port:
-                      number: 9898
-      target:
-        kind: Ingress
 sourceRef: 
   kind: GitRepository
   name: podinfo
