@@ -5,6 +5,7 @@ metadata:
   namespace: flux-system
 resources: 
   - ../base
+  - ./podinfo-ingress.yaml
 spec:
   patches: 
     - patch: |-
