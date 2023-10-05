@@ -7,7 +7,7 @@ Prerequisites:
   - Kubernetes cluster (using K3D in this example)
   - Github Access token to the repo &nbsp;
 &nbsp;
-
+  
 You can check if you have the right Kubernetes cluster setup for Flux by the following command:
   - "flux check --pre"
 
