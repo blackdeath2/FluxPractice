@@ -5,8 +5,8 @@ Repository to practice Flux CD, Istio and Jsonnet
 # Flux CD
 Prerequisites:
   - Kubernetes cluster (using K3D in this example)
-  - Github Access token to the repo
-&nbsp;
+  - Github Access token to the repo &nbsp;
+
 You can check if you have the right Kubernetes cluster setup for Flux by the following command:
   - "flux check --pre"
 
