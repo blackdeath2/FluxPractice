@@ -9,7 +9,7 @@ Prerequisites:
 $NewLine;
 You can check if you have the right Kubernetes cluster setup for Flux by the following command:
   - "flux check --pre"
-$NewLine
+$NewLine;
 ### Starting up K3D cluster (you need Docker)
 Commands:
   - "k3d cluster create my-cluster --api-port 6550 -p "9999:80@loadbalancer" --agents 2"
