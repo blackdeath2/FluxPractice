@@ -7,7 +7,15 @@ metadata:
 resources: 
   - ../base
 patches:
-  - path: ./horizontalPodScaler.yaml
+  - patch: |-
+      apiVersion: autoscaling/v2
+      kind: HorizontalPodAutoscaler
+      metadata:
+        name: podinfo
+        namespace: podinfo
+      spec:
+        minReplicas: 3
+#  - path: ./horizontalPodScaler.yaml
     target:
       kind: HorizontalPodAutoscaler
       name: podinfo
