@@ -1,6 +1,6 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-name: podinfo
+  name: podinfo
 spec:
   minReplicas: 3
